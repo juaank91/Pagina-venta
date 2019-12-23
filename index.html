@@ -10,54 +10,12 @@
     <title>Z-Store</title>
 
 </head>
-<body>
-    <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active " style="height: 90vh;">
-              <img src="./img/felicidad-1920-1-1024x575.jpg" class="d-block w-100" alt="...">
-              
-              <div class="carousel-caption d-none d-md-block" >
-                
-                <h3 class="">Soluciones para la vida diaria</h3>
-                <p class="h5">Queremos lo mejor para usted y su familia, mejorando cada dia los problemas de la vida diaria.</p>
-              </div>
-            </div>
-            <div class="carousel-item " style="height: 90vh;">
-              <img src="img/paises-mas-felices-del-mundo.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Revisa nuestro catalogo de productos</h3>
-                <p class="h5">Tenemos el mejor catalogo con productos completamente innovadores</p>
-              </div>
-            </div>
-            <div class="carousel-item" style="height: 90vh;">
-              <img src="img/dt.common.streams.StreamServer.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mejores ofertas</h3>
-                <p class="h5">¿Que es una pagina de ventas sin ofertas? Contamos con ofertas realmente impactantes </p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
-        </div>
-      </div>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light " style="height: 10vh;">
+<body >
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top " style="height: 10vh;">
         <div class="container">
             <a href="#" class="navbar-brand text-success">
-                Z-Store
+                <strong>Z-Store</strong> 
             </a>
 
             <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#menunav" ><span class="navbar-toggler-icon"></span></button>
@@ -75,8 +33,86 @@
         </div>
     </nav>
 
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active " style="height: 100vh;">
+              <img src="./img/felicidad-1920-1-1024x575.jpg" class="d-block w-100" alt="...">
+              
+              <div class="carousel-caption d-none d-md-block" >
+                
+                <h3 class="">Soluciones para la vida diaria</h3>
+                <p class="h5">Queremos lo mejor para usted y su familia, dando solucion cada dia los problemas de la vida diaria.</p>
+              </div>
+            </div>
+            <div class="carousel-item " style="height: 100vh;">
+              <img src="img/paises-mas-felices-del-mundo.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Revisa nuestro catalogo de productos</h3>
+                <p class="h5">Tenemos el mejor catalogo con productos completamente innovadores</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 100vh;">
+              <img src="img/dt.common.streams.StreamServer.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Mejores ofertas</h3>
+                <p class="h5">¿Que es una pagina de ventas sin ofertas? Contamos con ofertas realmente impactantes </p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
     
+    <header id="busqueda">
+        <div id="contenedor" class="container">
+            <div id="fila" class="row">
+                <div class="col-md-4 ">
+                  <div class="card my-4">
+                    <div class="card-header text-center">
+                        <strong>Añadir productos</strong>
+                        <h6>Recuadro diseñado para agregar productos nuevos.
+                        </h6>
+                    </div>
+                    <form id="formulario-add" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="codigo" placeholder="Codigo del producto" class="form-control">
+                        </div>
 
+                        <div class="form-group">
+                          <input type="text" id="nombre" placeholder="Nombre del producto" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="number" id="precio" step="0.01" placeholder="Precio del producto" class="form-control">
+                        </div>
+                        <input type="submit" value="Agregar" class="btn btn-success btn-block">
+                        
+                    </form>
+                  </div>
+                </div>
+
+                <div class="col-md-8 ml-auto">
+                  <h2 class="text-center">Listado de productos a ingresar</h2>
+                  <div id="lista-productos"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
 
 
     <!-- BOOTSTRAP JS -->
@@ -84,15 +120,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Scripts -->
-    <script>
-        window.sr = Scrollreveal();
-        sr.reveal('.bd-example',{
-            duration: 5000,
-            origin: 'top',
-            distance: '400px'
-
-        });
-    </script>
+    <script src="app.js"></script>
 
     
 </body>
