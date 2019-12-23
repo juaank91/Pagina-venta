@@ -96,8 +96,11 @@ document.getElementById('formulario-add')
 //Creacion de una funcion para eliminar un producto de la lista apenas se haga click en el boton eliminar
 document.getElementById("lista-productos").addEventListener('click', function(e){
     const ui=new UI();
-    ui.eliminarProducto(e.target);    
-    ui.mostrarMensaje("El producto a sido eliminado satisfactoriamente", 'danger')  
+    var opcion = confirm("¿Estas eliminando un producto estas seguro de querer continuar?")
+    if(opcion== true){
+        ui.eliminarProducto(e.target);    
+        ui.mostrarMensaje("El producto a sido eliminado satisfactoriamente", 'danger')  
+    }
 })
 
 
